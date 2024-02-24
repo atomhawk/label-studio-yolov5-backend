@@ -151,7 +151,7 @@ class YOLOv5Model(LabelStudioMLBase):
                     "y": prediction['ymin'] / original_height * 100,
                     "width": (prediction['xmax'] - prediction['xmin']) / original_width * 100,
                     "height": (prediction['ymax'] - prediction['ymin']) / original_height * 100,
-                    "rectanglelabels": [category_map[int(prediction.cls.item())]
+                    "rectanglelabels": [category_map[int(prediction.cls.item())]]
                 }
             })
 
